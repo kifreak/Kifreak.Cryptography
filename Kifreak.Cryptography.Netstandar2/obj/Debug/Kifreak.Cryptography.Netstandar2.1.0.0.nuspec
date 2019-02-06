@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Kifreak.Cryptography.Netstandar2</id>
+    <version>1.0.0</version>
+    <authors>Kifreak.Cryptography.Netstandar2</authors>
+    <owners>Kifreak.Cryptography.Netstandar2</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETFramework4.6" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\bin\Debug\net40\Kifreak.Cryptography.Netstandar2.dll" target="lib\net40\Kifreak.Cryptography.Netstandar2.dll" />
+    <file src="D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\bin\Debug\net45\Kifreak.Cryptography.Netstandar2.dll" target="lib\net45\Kifreak.Cryptography.Netstandar2.dll" />
+    <file src="D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\bin\Debug\net46\Kifreak.Cryptography.Netstandar2.dll" target="lib\net46\Kifreak.Cryptography.Netstandar2.dll" />
+    <file src="D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\bin\Debug\netstandard2.0\Kifreak.Cryptography.Netstandar2.dll" target="lib\netstandard2.0\Kifreak.Cryptography.Netstandar2.dll" />
+  </files>
+</package>

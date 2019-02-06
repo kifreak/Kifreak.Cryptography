@@ -1,0 +1,8 @@
+D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\bin\Debug\net45\Kifreak.Cryptography.Netstandar2.dll
+D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\bin\Debug\net45\Kifreak.Cryptography.Netstandar2.pdb
+D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\obj\Debug\net45\Kifreak.Cryptography.Netstandar2.csproj.CoreCompileInputs.cache
+D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\obj\Debug\net45\Kifreak.Cryptography.Netstandar2.AssemblyInfoInputs.cache
+D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\obj\Debug\net45\Kifreak.Cryptography.Netstandar2.AssemblyInfo.cs
+D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\obj\Debug\net45\Kifreak.Cryptography.Netstandar2.dll
+D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\obj\Debug\net45\Kifreak.Cryptography.Netstandar2.pdb
+D:\Desarrollo\Net\Kifreak\Shared\Kifreak.Cryptography\Kifreak.Cryptography.Netstandar2\obj\Debug\net45\Kifreak.Cryptography.Netstandar2.csprojAssemblyReference.cache
