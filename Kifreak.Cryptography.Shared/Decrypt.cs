@@ -3,9 +3,8 @@ using System.Security.Cryptography;
 
 namespace Kifreak.Cryptography
 {
-    public class Decrypt: CryptographyBase<AesManaged>
+    public class Decrypt : CryptographyBase<AesManaged>
     {
-
         public Decrypt(string password) : base(password)
         {
         }
@@ -18,8 +17,7 @@ namespace Kifreak.Cryptography
 
         public string DecryptMessage(byte[] byteMessage)
         {
-            int count = 0;
-            return GetString(DecryptByteMessage(byteMessage, out count), count);
+            return GetString(DecryptByteMessage(byteMessage, out var count), count);
         }
 
         public byte[] DecryptByteMessage(byte[] byteMessage, out int count)
@@ -30,7 +28,5 @@ namespace Kifreak.Cryptography
             count = CryptoStream.Read(decrypted, 0, decrypted.Length);
             return decrypted;
         }
-
-
     }
 }

@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net45;net40;net46;net46;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net45;net40;net46;net461;net462</TargetFrameworks>
+    <PackageId>Kifreak.Cryptography</PackageId>
+    <Authors>Kifreak</Authors>
+    <Product>Kifreak.Cryptography</Product>
+    <Description>Cryptography is a library to make easy encrypt messages and files.</Description>
+    <Copyright>Copyright � 2018, Kifreak</Copyright>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageIconUrl>https://github.com/kifreak/media/raw/master/encrypted.png</PackageIconUrl>
+    <PackageProjectUrl>https://kifreak.com</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First nuget package</PackageReleaseNotes>
   </PropertyGroup>
 
   <Import Project="..\Kifreak.Cryptography.Shared\Kifreak.Cryptography.Shared.projitems" Label="Shared" />

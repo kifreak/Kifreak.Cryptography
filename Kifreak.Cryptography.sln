@@ -10,9 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{99D7425D-925E-4074-9308-1DF3E862C5C7}"
 	ProjectSection(SolutionItems) = preProject
 		cryptography.nuspec = cryptography.nuspec
+		Readme.txt = Readme.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kifreak.Cryptography.Netstandar2", "Kifreak.Cryptography.Netstandar2\Kifreak.Cryptography.Netstandar2.csproj", "{E59987C4-22C1-4F5C-8BAA-B019C7DE734F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kifreak.Cryptography.Netstandar2", "Kifreak.Cryptography.Netstandar2\Kifreak.Cryptography.Netstandar2.csproj", "{E59987C4-22C1-4F5C-8BAA-B019C7DE734F}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

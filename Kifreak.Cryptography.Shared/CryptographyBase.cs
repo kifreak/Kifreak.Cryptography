@@ -5,14 +5,15 @@ using System.Text;
 
 namespace Kifreak.Cryptography
 {
+    //TODO - PasswordDeriveBytes.GetBytes Obsolete --> Investigate Rfc2898DeriveBytes
     public class CryptographyBase<T> where T : SymmetricAlgorithm, new()
     {
-        protected int Iterations = 2;
-        protected int KeySize = 256;
+        private readonly int _iterations = 2;
+        private readonly int _keySize = 256;
 
-        protected string Hash = "SHA256";
-        protected string Salt = "aselrias38490a32"; // Random??
-        protected string Vector = "8947az34awl34kjq"; // Random??
+        private readonly string _hash = "SHA256";
+        private readonly string _salt = "aselrias38490a32";
+        private readonly string _vector = "8947az34awl34kjq";
         protected T Algorithm;
         protected byte[] VectorBytes;
         protected byte[] SaltBytes;
@@ -25,24 +26,24 @@ namespace Kifreak.Cryptography
             {
                 Mode = CipherMode.CBC
             };
-            VectorBytes = GetBytes(Vector);
-            SaltBytes = GetBytes(Salt);
-            PasswordDeriveBytes passwordBytes = new PasswordDeriveBytes(password, SaltBytes, Hash, Iterations);
-            KeyBytes = passwordBytes.GetBytes(KeySize / 8);
+            VectorBytes = GetBytes(_vector);
+            SaltBytes = GetBytes(_salt);
+            PasswordDeriveBytes passwordBytes = new PasswordDeriveBytes(password, SaltBytes, _hash, _iterations);
+            KeyBytes = passwordBytes.GetBytes(_keySize / 8);
             MemoryStream = new MemoryStream();
         }
 
-        public byte[] GetBytes(string message)
+        protected byte[] GetBytes(string message)
         {
             return Encoding.UTF8.GetBytes(message);
         }
 
-        public ICryptoTransform GetEncryptor()
+        protected ICryptoTransform GetEncryptor()
         {
             return Algorithm.CreateEncryptor(KeyBytes, VectorBytes);
         }
 
-        public ICryptoTransform GetDecryptor()
+        protected ICryptoTransform GetDecryptor()
         {
             return Algorithm.CreateDecryptor(KeyBytes, VectorBytes);
         }
@@ -61,6 +62,5 @@ namespace Kifreak.Cryptography
         {
             return Encoding.UTF8.GetString(byteElement, 0, count);
         }
-
     }
 }
