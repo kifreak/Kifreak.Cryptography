@@ -5,6 +5,8 @@ namespace Kifreak.Cryptography
 {
     public class Decrypt : CryptographyBase<AesManaged>
     {
+        public Decrypt(string password, string salt, string vector) : base(password, salt, vector) { }
+
         public Decrypt(string password) : base(password)
         {
         }
@@ -24,7 +26,7 @@ namespace Kifreak.Cryptography
         {
             byte[] decrypted = new byte[byteMessage.Length];
             MemoryStream = new MemoryStream(byteMessage);
-            CryptoStream = new CryptoStream(MemoryStream, GetDecryptor(), CryptoStreamMode.Read);
+            CryptoStream = new CryptoStream(MemoryStream, CreateDecryptor(), CryptoStreamMode.Read);
             count = CryptoStream.Read(decrypted, 0, decrypted.Length);
             return decrypted;
         }
