@@ -21,8 +21,8 @@ namespace Kifreak.Cryptography
         protected MemoryStream MemoryStream;
         protected CryptoStream CryptoStream;
 
-        protected string Salt { get; set; }
-        protected string Vector { get; set; }
+        public string Salt { get; private set; }
+        public string Vector { get; private set; }
 
         public CryptographyBase(string password) : this(password, RandomString(16), RandomString(16))
         {
@@ -67,10 +67,16 @@ namespace Kifreak.Cryptography
 
         private void Init(string password)
         {
+            if (string.IsNullOrEmpty(password))
+            {
+                throw new Exception("Password not found");
+            }
+
             Algorithm = new T
             {
                 Mode = CipherMode.CBC
             };
+
             VectorBytes = GetBytes(Vector);
             SaltBytes = GetBytes(Salt);
             PasswordDeriveBytes passwordBytes = new PasswordDeriveBytes(password, SaltBytes, _hash, _iterations);

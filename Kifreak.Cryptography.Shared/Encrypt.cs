@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System;
+using System.Security.Cryptography;
 
 namespace Kifreak.Cryptography
 {
@@ -19,6 +20,10 @@ namespace Kifreak.Cryptography
 
         public string EncryptMessage(string message)
         {
+            if (string.IsNullOrEmpty(message))
+            {
+                throw new Exception("Message not found");
+            }
             return EncryptMessageToByte(GetBytes(message));
         }
 
