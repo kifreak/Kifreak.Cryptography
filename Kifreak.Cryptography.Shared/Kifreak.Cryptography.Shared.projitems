@@ -16,8 +16,17 @@
     <Import_RootNamespace>Kifreak.Cryptography.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)CryptographyBase.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Decrypt.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Encrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Asymmetric\CryptographyBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Asymmetric\Decrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Asymmetric\Encrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BaseCrypto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IDecrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IEncrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Symmetric\CryptographyBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Symmetric\Decrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Symmetric\Encrypt.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Symmetric\" />
   </ItemGroup>
 </Project>

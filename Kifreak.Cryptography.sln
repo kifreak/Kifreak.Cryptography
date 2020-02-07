@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kifreak.Cryptography.UnitTest", "Kifreak.Cryptography.UnitTest\Kifreak.Cryptography.UnitTest.csproj", "{343E75DB-04C1-4902-95A5-BA54C641E711}"
 EndProject
@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kifreak.Cryptography.Netstandar2", "Kifreak.Cryptography.Netstandar2\Kifreak.Cryptography.Netstandar2.csproj", "{E59987C4-22C1-4F5C-8BAA-B019C7DE734F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kifreak.Cryptography.Tools", "Kifreak.Cryptography.Tools\Kifreak.Cryptography.Tools.csproj", "{90301724-0009-46AF-9D89-D96A1F41227F}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -33,30 +35,15 @@ Global
 		{E59987C4-22C1-4F5C-8BAA-B019C7DE734F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E59987C4-22C1-4F5C-8BAA-B019C7DE734F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E59987C4-22C1-4F5C-8BAA-B019C7DE734F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90301724-0009-46AF-9D89-D96A1F41227F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90301724-0009-46AF-9D89-D96A1F41227F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90301724-0009-46AF-9D89-D96A1F41227F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90301724-0009-46AF-9D89-D96A1F41227F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {651D698A-FA5A-4B13-8C54-F7586F4B9FDC}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://kistudio.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Kifreak.Cryptography.UnitTest\\Kifreak.Cryptography.UnitTest.csproj
-		SccProjectName1 = Kifreak.Cryptography.UnitTest
-		SccLocalPath1 = Kifreak.Cryptography.UnitTest
-		SccProjectUniqueName2 = Kifreak.Cryptography.Shared\\Kifreak.Cryptography.Shared.shproj
-		SccProjectName2 = Kifreak.Cryptography.Shared
-		SccLocalPath2 = Kifreak.Cryptography.Shared
-		SccProjectUniqueName3 = Kifreak.Cryptography.Shared\\Kifreak.Cryptography.Shared.projitems
-		SccProjectTopLevelParentUniqueName3 = Kifreak.Cryptography.Shared\\Kifreak.Cryptography.Shared.shproj
-		SccProjectName3 = Kifreak.Cryptography.Shared
-		SccLocalPath3 = Kifreak.Cryptography.Shared
-		SccProjectUniqueName4 = Kifreak.Cryptography.Netstandar2\\Kifreak.Cryptography.Netstandar2.csproj
-		SccProjectName4 = Kifreak.Cryptography.Netstandar2
-		SccLocalPath4 = Kifreak.Cryptography.Netstandar2
 	EndGlobalSection
 EndGlobal
