@@ -5,7 +5,7 @@ namespace Kifreak.Cryptography.Tools
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Kifreak Cryptography Tools");
             Line();
@@ -47,16 +47,14 @@ namespace Kifreak.Cryptography.Tools
             {
                 return 3048;
             }
+
+            if (int.TryParse(value, out int result))
+            {
+                return result;
+            }
             else
             {
-                if (int.TryParse(value, out int result))
-                {
-                    return result;
-                }
-                else
-                {
-                    return 3048;
-                }
+                return 3048;
             }
         }
         private static void Line()

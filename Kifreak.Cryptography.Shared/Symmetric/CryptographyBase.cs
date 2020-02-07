@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
-using System.Text;
 
 namespace Kifreak.Cryptography.Symmetric
 {
@@ -11,8 +9,6 @@ namespace Kifreak.Cryptography.Symmetric
         private readonly int _iterations = 2;
         private readonly int _keySize = 256;
        
-        private readonly string _hash = "SHA256";
-
         protected T Algorithm;
         protected byte[] VectorBytes;
         protected byte[] SaltBytes;
@@ -20,8 +16,8 @@ namespace Kifreak.Cryptography.Symmetric
         protected MemoryStream MemoryStream;
         protected CryptoStream CryptoStream;
 
-        public string Salt { get; private set; }
-        public string Vector { get; private set; }
+        public string Salt { get;  }
+        public string Vector { get;  }
 
         public CryptographyBase(string password) : this(password, RandomString(16), RandomString(16))
         {
@@ -43,8 +39,6 @@ namespace Kifreak.Cryptography.Symmetric
         {
             return Algorithm.CreateDecryptor(KeyBytes, VectorBytes);
         }
-
-       
 
         private void Init(string password)
         {

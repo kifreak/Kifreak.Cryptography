@@ -2,15 +2,19 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Kifreak.Cryptography</id>
+	<title>Kifreak.Cryptography</title>
     <version>1.0.0-beta</version>
     <owners>Kifreak</owners>
     <authors>Kifreak</authors>
 	<description>
       Cryptography is a library to make easy encrypt messages and files.
     </description>
+	<summary>
+	 Asp.Net library to make easy encrypt messages and files.
+	</summary>	
     <language>en-UK</language>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <iconUrl>https://github.com/kifreak/media/raw/master/encrypted.png</iconUrl>
+	<iconUrl>https://github.com/kifreak/media/raw/master/encrypted.png</iconUrl>
     <projectUrl>https://kifreak.com</projectUrl>
     <tags>File Encrypt Decrypt</tags>
     <copyright>Copyright 2018, Kifreak</copyright>
@@ -24,14 +28,18 @@
       <group targetFramework=".NETFramework4.6.1" />
       <group targetFramework=".NETFramework4.6.2" />
       <group targetFramework=".NETStandard2.0" />
+	  <group targetFramework=".NETCoreApp3.0" /> 
+	  <group targetFramework=".NETCoreApp3.1" /> 
     </dependencies>
   </metadata>
-  <files>
+  <files>    
     <file src="Kifreak.Cryptography.NetStandar2\bin\Release\net40\Kifreak.Cryptography.Netstandar2.dll" target="lib\net40\Kifreak.Cryptography.Netstandar2.dll" />
     <file src="Kifreak.Cryptography.NetStandar2\bin\Release\net45\Kifreak.Cryptography.Netstandar2.dll" target="lib\net45\Kifreak.Cryptography.Netstandar2.dll" />
     <file src="Kifreak.Cryptography.NetStandar2\bin\Release\net46\Kifreak.Cryptography.Netstandar2.dll" target="lib\net46\Kifreak.Cryptography.Netstandar2.dll" />
     <file src="Kifreak.Cryptography.NetStandar2\bin\Release\net461\Kifreak.Cryptography.Netstandar2.dll" target="lib\net461\Kifreak.Cryptography.Netstandar2.dll" />
     <file src="Kifreak.Cryptography.NetStandar2\bin\Release\net462\Kifreak.Cryptography.Netstandar2.dll" target="lib\net462\Kifreak.Cryptography.Netstandar2.dll" />
+	<file src="Kifreak.Cryptography.NetStandar2\bin\Release\netcoreapp3.0\Kifreak.Cryptography.Netstandar2.dll" target="lib\netcoreapp3.0\Kifreak.Cryptography.Netstandar2.dll" />
+	<file src="Kifreak.Cryptography.NetStandar2\bin\Release\netcoreapp3.1\Kifreak.Cryptography.Netstandar2.dll" target="lib\netcoreapp3.1\Kifreak.Cryptography.Netstandar2.dll" />
     <file src="Kifreak.Cryptography.NetStandar2\bin\Release\netstandard2.0\Kifreak.Cryptography.Netstandar2.dll" target="lib\netstandard2.0\Kifreak.Cryptography.Netstandar2.dll" />
   </files>
 </package>
