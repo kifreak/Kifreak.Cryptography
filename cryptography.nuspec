@@ -19,9 +19,9 @@
     <tags>File Encrypt Decrypt</tags>
     <copyright>Copyright 2018, Kifreak</copyright>
     <releaseNotes>
-      First nuget package
+      Symmetric and Asymmetric encryption.
     </releaseNotes>
-    <dependencies>
+	  <dependencies>
       <group targetFramework=".NETFramework4.0" />
       <group targetFramework=".NETFramework4.5" />
       <group targetFramework=".NETFramework4.6" />
